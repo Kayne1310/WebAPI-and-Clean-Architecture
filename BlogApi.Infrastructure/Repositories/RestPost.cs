@@ -56,12 +56,11 @@ namespace BlogApi.Infrastructure.Repositories
 
         }
 
-        public async Task<Post> getPostByCategoryName(string categoryName)
+        public async Task<List<Post>> getPostByCategoryName(string categoryName)
         {
-            var res = await dbcontext.Post.Where(x => x.Category.Name.Contains(categoryName)).FirstOrDefaultAsync();
+            var res = await dbcontext.Post.Where(x => x.Category.Name.Contains(categoryName)).ToListAsync();
 
             return res;
-
 
         }
 
@@ -71,18 +70,26 @@ namespace BlogApi.Infrastructure.Repositories
             return res;
         }
 
+        public async Task<Post> getPostReturnCategory(Post post)
+        {
+            
+            var res=await dbcontext.Post.Include(c=>c.Category).FirstOrDefaultAsync(x=>x.Category.ID== post.CategoryID);
+
+            return res;
+        }
+
         public async Task<Post> updatePost(int id, Post post)
         {
-            var res = await dbcontext.Post.FindAsync(id);
+            var res = await dbcontext.Post.FirstOrDefaultAsync(x=>x.ID==id);
 
             res.CategoryID = post.CategoryID;
             res.UpdatedAt = DateTime.Now;
             res.Content = post.Content;
             res.Status = post.Status;
             res.Title = post.Title;
-
-
             await dbcontext.SaveChangesAsync();
+            res = await dbcontext.Post.Include(c => c.Category).FirstOrDefaultAsync(x => x.Category.ID == res.CategoryID);
+
             return res;
 
         }

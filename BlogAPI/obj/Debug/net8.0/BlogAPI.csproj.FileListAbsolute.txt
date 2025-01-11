@@ -289,3 +289,4 @@ G:\Hoc Web API\BlogAPI\BlogAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Worksp
 G:\Hoc Web API\BlogAPI\BlogAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 G:\Hoc Web API\BlogAPI\BlogAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 G:\Hoc Web API\BlogAPI\BlogAPI\bin\Debug\net8.0\AutoMapper.dll
+G:\Hoc Web API\BlogAPI\BlogAPI\obj\Debug\net8.0\BlogAPI.sourcelink.json

@@ -9,3 +9,4 @@ G:\Hoc Web API\BlogAPI\BlogAPI.Entites\obj\Debug\net8.0\BlogAPI.Entites.dll
 G:\Hoc Web API\BlogAPI\BlogAPI.Entites\obj\Debug\net8.0\refint\BlogAPI.Entites.dll
 G:\Hoc Web API\BlogAPI\BlogAPI.Entites\obj\Debug\net8.0\BlogAPI.Entites.pdb
 G:\Hoc Web API\BlogAPI\BlogAPI.Entites\obj\Debug\net8.0\ref\BlogAPI.Entites.dll
+G:\Hoc Web API\BlogAPI\BlogAPI.Entites\obj\Debug\net8.0\BlogAPI.Entites.sourcelink.json

@@ -12,7 +12,7 @@ namespace BlogApi.Infrastructure.Repositories
 
         Task<List<Post>> getAllPost();
 
-        Task<Post> getPostByCategoryName(string categoryName);
+        Task<List<Post>> getPostByCategoryName(string categoryName);
 
         Task<Post> getPostbyId(int id);
 
@@ -20,5 +20,8 @@ namespace BlogApi.Infrastructure.Repositories
 
         Task<Post> updatePost(int id,Post post);
         Task<Post> deletePost(int id);
+
+        Task<Post> getPostReturnCategory(Post post);
+
     }
 }

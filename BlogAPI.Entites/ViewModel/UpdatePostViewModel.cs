@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 
 namespace BlogAPI.Entites.ViewModel
 {
-    public class CreatePostViewModel
+    public class UpdatePostViewModel
     {
+
         public string Title { get; set; }
         public string Content { get; set; }
 
-        public int CategoryId { get; set; }
+        public int CategoryID { get; set; }
 
         public string Status { get; set; }
-     
+        public DateTime? UpdatedAt { get; set; } 
     }
 }

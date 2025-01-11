@@ -15,3 +15,4 @@ G:\Hoc Web API\BlogAPI\BlogApi.Infrastructure\bin\Debug\net8.0\BlogAPI.Entites.p
 G:\Hoc Web API\BlogAPI\BlogApi.Infrastructure\obj\Debug\net8.0\BlogApi.Infrastructure.csproj.AssemblyReference.cache
 G:\Hoc Web API\BlogAPI\BlogApi.Infrastructure\obj\Debug\net8.0\BlogApi..14E42DFE.Up2Date
 G:\Hoc Web API\BlogAPI\BlogApi.Infrastructure\obj\Debug\net8.0\BlogApi.Infrastructure.genruntimeconfig.cache
+G:\Hoc Web API\BlogAPI\BlogApi.Infrastructure\obj\Debug\net8.0\BlogApi.Infrastructure.sourcelink.json

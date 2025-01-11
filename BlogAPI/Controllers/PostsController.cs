@@ -41,5 +41,67 @@ namespace BlogAPI.Controllers
         
         }
 
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult> getPostById(int id)
+        {
+            var res=await postServices.getPostbyId(id);
+            if (res == null)
+            {
+                return NotFound("id not found :" + id);
+            }
+
+            return Ok(res);
+
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> getAllPost() {
+            var res=await postServices.getAllPost();
+
+            if(res == null)
+            {
+                return NotFound ();
+
+            }
+            return Ok(res);
+        
+        }
+
+        [HttpDelete]
+        public async Task<ActionResult> deletePostById(int id)
+        {
+            var res=await postServices.deletePost(id);
+            if (res == 1)
+            {
+                return Ok("delete id" + id + " Successful");
+            }
+            return BadRequest("id delete not found " + id);
+        }
+
+        [HttpPut]
+        public async Task<ActionResult> UpdatePostController(int id, [FromBody] UpdatePostViewModel post)
+        {
+
+            var res=await postServices.UpdatePostSv(id, post);
+            if (res == null)
+            {
+                return NotFound("id not found " + id);
+            }
+            return Ok(res);
+        }
+
+        [HttpGet("name")]
+        public async Task<ActionResult> getPostByName(string name)
+        {
+            var res=await postServices.getPostByCategoryName(name);
+
+            if (res == null)
+            {
+                return BadRequest("no name " + name);
+            }
+            return Ok (res);
+
+
+        }
     }
 }

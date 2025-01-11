@@ -16,6 +16,7 @@ namespace BlogAPI.Application.Mapping
             CreateMap<Category,CategoryViewModel>().ReverseMap();
             CreateMap<Post,PostViewModel>().ReverseMap();
             CreateMap<CreatePostViewModel,Post>().ReverseMap();
+            CreateMap<UpdatePostViewModel, Post>().ReverseMap();
 
         }
     }

@@ -11,15 +11,15 @@ namespace BlogAPI.Application.IServices
     public interface IPostServices
     {
 
-        Task<List<Post>> getAllPost();
+        Task<List<PostViewModel>> getAllPost();
 
-        Task<Post> getPostByCategoryName(string categoryName);
+        Task<List<PostViewModel?>> getPostByCategoryName(string categoryName);
 
         Task<Post?> getPostbyId(int id);
 
         Task<PostViewModel?> CreatePost(CreatePostViewModel post);
 
-        Task<Post?> updatePost(int id, PostViewModel post);
+        Task<Post?> UpdatePostSv(int id, UpdatePostViewModel post);
         Task<int> deletePost(int id);
     }
 }

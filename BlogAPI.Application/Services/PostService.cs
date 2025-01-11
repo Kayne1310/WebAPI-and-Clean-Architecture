@@ -58,29 +58,87 @@ namespace BlogAPI.Application.Services
 
         }
 
-        public Task<int> deletePost(int id)
+        public async Task<int> deletePost(int id)
         {
-            throw new NotImplementedException();
+                var res=ipost.getPostbyId(id);
+            if (res == null)
+            {
+                return -1;
+            }
+
+            await ipost.deletePost(id);
+
+            return 1;
+
+
         }
 
-        public Task<List<Post>> getAllPost()
+        public async Task<List<PostViewModel>> getAllPost()
         {
-            throw new NotImplementedException();
+            var listPost=await ipost.getAllPost();
+
+            var newlistPost=new List<PostViewModel>();
+
+            foreach (var post in listPost)
+            {
+                newlistPost.Add(mapper.Map<PostViewModel>(await ipost.getPostReturnCategory(post)));
+            }
+            return newlistPost;
         }
 
-        public Task<Post> getPostByCategoryName(string categoryName)
+        public async Task<List<PostViewModel?>> getPostByCategoryName(string categoryName)
         {
-            throw new NotImplementedException();
+            var res=await ipost.getPostByCategoryName(categoryName);
+
+            var newlistPost=new List<PostViewModel>();
+            if(res == null)
+            {
+                return null;
+            }
+
+            foreach(var post in res)
+            {
+                //convert sang post  nhung co data category
+              
+                newlistPost.Add(mapper.Map<PostViewModel>(await ipost.getPostReturnCategory(post)));
+            }
+            return newlistPost;
+
         }
 
-        public Task<Post?> getPostbyId(int id)
+        public async Task<Post?> getPostbyId(int id)
         {
-            throw new NotImplementedException();
+            //check id post isempty
+             var checkPostId=await ipost.getPostbyId(id);
+            if (checkPostId == null)
+            {
+                return null;
+            }
+            var res =await  ipost.getPostReturnCategory(checkPostId);
+
+            return res;          
         }
 
-        public Task<Post?> updatePost(int id, PostViewModel post)
+        public async Task<Post?> UpdatePostSv(int id, UpdatePostViewModel post)
         {
-            throw new NotImplementedException();
+            //map updateviewModel to postdo
+            var postdo = mapper.Map<Post>(post);
+
+            //update post
+            var res = await ipost.updatePost(id, postdo);
+
+            if(res == null)
+            {
+                return null;
+            }
+
+             return res;
+            
+
+
         }
+        
+         
+
     }
 }

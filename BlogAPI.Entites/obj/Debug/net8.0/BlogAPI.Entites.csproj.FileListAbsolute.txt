@@ -1,0 +1,11 @@
+G:\Hoc Web API\BlogAPI\BlogAPI.Entites\bin\Debug\net8.0\BlogAPI.Entites.deps.json
+G:\Hoc Web API\BlogAPI\BlogAPI.Entites\bin\Debug\net8.0\BlogAPI.Entites.dll
+G:\Hoc Web API\BlogAPI\BlogAPI.Entites\bin\Debug\net8.0\BlogAPI.Entites.pdb
+G:\Hoc Web API\BlogAPI\BlogAPI.Entites\obj\Debug\net8.0\BlogAPI.Entites.GeneratedMSBuildEditorConfig.editorconfig
+G:\Hoc Web API\BlogAPI\BlogAPI.Entites\obj\Debug\net8.0\BlogAPI.Entites.AssemblyInfoInputs.cache
+G:\Hoc Web API\BlogAPI\BlogAPI.Entites\obj\Debug\net8.0\BlogAPI.Entites.AssemblyInfo.cs
+G:\Hoc Web API\BlogAPI\BlogAPI.Entites\obj\Debug\net8.0\BlogAPI.Entites.csproj.CoreCompileInputs.cache
+G:\Hoc Web API\BlogAPI\BlogAPI.Entites\obj\Debug\net8.0\BlogAPI.Entites.dll
+G:\Hoc Web API\BlogAPI\BlogAPI.Entites\obj\Debug\net8.0\refint\BlogAPI.Entites.dll
+G:\Hoc Web API\BlogAPI\BlogAPI.Entites\obj\Debug\net8.0\BlogAPI.Entites.pdb
+G:\Hoc Web API\BlogAPI\BlogAPI.Entites\obj\Debug\net8.0\ref\BlogAPI.Entites.dll

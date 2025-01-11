@@ -1,0 +1,17 @@
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\bin\Debug\net8.0\BlogAPI.Application.deps.json
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\bin\Debug\net8.0\BlogAPI.Application.dll
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\bin\Debug\net8.0\BlogAPI.Application.pdb
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\obj\Debug\net8.0\BlogAPI.Application.GeneratedMSBuildEditorConfig.editorconfig
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\obj\Debug\net8.0\BlogAPI.Application.AssemblyInfoInputs.cache
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\obj\Debug\net8.0\BlogAPI.Application.AssemblyInfo.cs
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\obj\Debug\net8.0\BlogAPI.Application.csproj.CoreCompileInputs.cache
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\obj\Debug\net8.0\BlogAPI.Application.dll
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\obj\Debug\net8.0\refint\BlogAPI.Application.dll
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\obj\Debug\net8.0\BlogAPI.Application.pdb
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\obj\Debug\net8.0\ref\BlogAPI.Application.dll
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\bin\Debug\net8.0\BlogAPI.Entites.dll
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\bin\Debug\net8.0\BlogApi.Infrastructure.dll
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\bin\Debug\net8.0\BlogAPI.Entites.pdb
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\bin\Debug\net8.0\BlogApi.Infrastructure.pdb
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\obj\Debug\net8.0\BlogAPI.Application.csproj.AssemblyReference.cache
+G:\Hoc Web API\BlogAPI\BlogAPI.Application\obj\Debug\net8.0\BlogAPI..039527A1.Up2Date

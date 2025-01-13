@@ -16,3 +16,5 @@ G:\Hoc Web API\BlogAPI\BlogApi.Infrastructure\obj\Debug\net8.0\BlogApi.Infrastru
 G:\Hoc Web API\BlogAPI\BlogApi.Infrastructure\obj\Debug\net8.0\BlogApi..14E42DFE.Up2Date
 G:\Hoc Web API\BlogAPI\BlogApi.Infrastructure\obj\Debug\net8.0\BlogApi.Infrastructure.genruntimeconfig.cache
 G:\Hoc Web API\BlogAPI\BlogApi.Infrastructure\obj\Debug\net8.0\BlogApi.Infrastructure.sourcelink.json
+G:\Hoc Web API\BlogAPI\BlogApi.Infrastructure\bin\Debug\net8.0\BlogApi.Common.dll
+G:\Hoc Web API\BlogAPI\BlogApi.Infrastructure\bin\Debug\net8.0\BlogApi.Common.pdb

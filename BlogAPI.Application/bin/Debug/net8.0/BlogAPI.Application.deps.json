@@ -627,6 +627,11 @@
           }
         }
       },
+      "BlogApi.Common/1.0.0": {
+        "runtime": {
+          "BlogApi.Common.dll": {}
+        }
+      },
       "BlogAPI.Entites/1.0.0": {
         "runtime": {
           "BlogAPI.Entites.dll": {}
@@ -635,6 +640,7 @@
       "BlogApi.Infrastructure/1.0.0": {
         "dependencies": {
           "BlogAPI.Entites": "1.0.0",
+          "BlogApi.Common": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
         },
@@ -1048,6 +1054,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "BlogApi.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "BlogAPI.Entites/1.0.0": {
       "type": "project",

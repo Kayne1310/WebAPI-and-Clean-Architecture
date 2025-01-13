@@ -1,0 +1,12 @@
+G:\Hoc Web API\BlogAPI\BlogApi.Common\bin\Debug\net8.0\BlogApi.Common.deps.json
+G:\Hoc Web API\BlogAPI\BlogApi.Common\bin\Debug\net8.0\BlogApi.Common.dll
+G:\Hoc Web API\BlogAPI\BlogApi.Common\bin\Debug\net8.0\BlogApi.Common.pdb
+G:\Hoc Web API\BlogAPI\BlogApi.Common\obj\Debug\net8.0\BlogApi.Common.GeneratedMSBuildEditorConfig.editorconfig
+G:\Hoc Web API\BlogAPI\BlogApi.Common\obj\Debug\net8.0\BlogApi.Common.AssemblyInfoInputs.cache
+G:\Hoc Web API\BlogAPI\BlogApi.Common\obj\Debug\net8.0\BlogApi.Common.AssemblyInfo.cs
+G:\Hoc Web API\BlogAPI\BlogApi.Common\obj\Debug\net8.0\BlogApi.Common.csproj.CoreCompileInputs.cache
+G:\Hoc Web API\BlogAPI\BlogApi.Common\obj\Debug\net8.0\BlogApi.Common.sourcelink.json
+G:\Hoc Web API\BlogAPI\BlogApi.Common\obj\Debug\net8.0\BlogApi.Common.dll
+G:\Hoc Web API\BlogAPI\BlogApi.Common\obj\Debug\net8.0\refint\BlogApi.Common.dll
+G:\Hoc Web API\BlogAPI\BlogApi.Common\obj\Debug\net8.0\BlogApi.Common.pdb
+G:\Hoc Web API\BlogAPI\BlogApi.Common\obj\Debug\net8.0\ref\BlogApi.Common.dll

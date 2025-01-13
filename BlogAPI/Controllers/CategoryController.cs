@@ -1,5 +1,6 @@
 ﻿using BlogAPI.Application.IServices;
 using BlogAPI.Entites.ViewModel;
+using BlogAPI.Filter;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +8,7 @@ namespace BlogAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryServices categoryServices;
@@ -24,6 +26,7 @@ namespace BlogAPI.Controllers
 
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult> listCategories()
         {

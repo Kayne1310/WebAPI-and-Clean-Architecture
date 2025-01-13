@@ -5,6 +5,9 @@ using BlogAPI.Application.IServices;
 using BlogAPI.Application.Services;
 using BlogApi.Infrastructure.Repositories;
 using BlogAPI.Application.Mapping;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace BlogAPI
 {
@@ -27,8 +30,28 @@ namespace BlogAPI
             builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
             builder.Services.AddScoped<IPost, RestPost>();
             builder.Services.AddScoped<IPostServices, PostService>();
+            builder.Services.AddScoped<IAccountServices,AccountServices>();
 
 
+
+
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ValidateLifetime = false,
+                    ValidateIssuerSigningKey = false,
+                    ValidIssuer = builder.Configuration["Jwt:ValidIssuer"],
+                    ValidAudience = builder.Configuration["Jwt:ValidAudience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Secret"]))
+                };
+            });
 
 
             var app = builder.Build();
@@ -40,6 +63,7 @@ namespace BlogAPI
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseAuthentication();
 
             app.UseHttpsRedirection();
 

@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BlogAPI.Entites\BlogAPI.Entites.csproj" />
     <ProjectReference Include="..\BlogApi.Infrastructure\BlogApi.Infrastructure.csproj" />
+
   </ItemGroup>
 
 </Project>
